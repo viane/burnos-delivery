@@ -10,7 +10,14 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
- 
+    <script>
+        function goBack() {
+        window.history.back()
+        }
+        function goForward() {
+        window.history.forward()
+        }
+    </script>    
     
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
 
@@ -91,8 +98,8 @@
             <div class="toolbar">
                 <div class="toolbar-inner">
                     <!-- Toolbar links -->
-                    <a class="footerLink" href="window.history.back()">Prev</a>
-                    <a class="footerLink" href="window.history.forward()">Next</a>
+                    <a class="footerLink" href="goBack">Prev</a>
+                    <a class="footerLink" href="goForward">Next</a>
                         
                 </div>
             </div>

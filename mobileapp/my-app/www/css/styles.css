@@ -1,47 +1,79 @@
 /*
    statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
    statusbar plugin is added, it also adds default setting to make the content white via:
+
        <preference name="StatusBarStyle" value="lightcontent"/>
+
    Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
    in the config.xml file and will be added by the CLI when you build locally.
+
    See https://github.com/apache/cordova-plugin-statusbar
 */
+
 .statusbar-overlay {
     background: #000000;
 }
 a:hover { 
     background-color: black;
 }
+
 p {
     text-align: center;
 }
+
+.pageTitle {
+	font-size: 200%;
+	color: white;
+	background-color: black;
+}
+
 body {
-    background: #111;
-    color: #FFF;
-    font-family:'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: 16pt;
+	background: #111;
+	color: #FFF;
+	font-family:'Open Sans', sans-serif;
+	font-weight: 300;
 }
 a {
-    color: #FFF;
-    text-decoration: none;
+	color: #FFF;
+	text-decoration: none;
 }
 .menu {
-    width: 570px;
-    margin: 30px auto;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .menu a {
-    width: 180px;
-    line-height: 180px;
-    display: block;
-    margin: 4px;
-    text-align: center;
-    float:left;
-    opacity: 100;
+	width: 45%;
+	height: 90%;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	display: block;
+	margin: 8px;
+	text-align: center;
+	float:left;
+	opacity: 100;
+	font-size: 150%;
+	word-wrap: break-word;
 }
-.yellow { background: #fdd22a; }
-.blue { background: #009fe3; }
-.purple { background: #574696; }
-.orange { background: #ee7202; }
-.pink { background: #e61c67; }
-.green { background: #96c11f; }
+.yellow { background: #fdd22a; border-radius: 25px;}
+.blue { background: #009fe3; border-radius: 25px;}
+.purple { background: #574696; border-radius: 25px;}
+.orange { background: #ee7202; border-radius: 25px;}
+.pink { background: #e61c67; border-radius: 25px;}
+.green { background: #96c11f; border-radius: 25px;}
+.greenL { background: #228B22; border-radius: 25px;}
+.greenG { background: #808000; border-radius: 25px;}
+.greenD { background: #006400; border-radius: 25px;}
+
+.toolbar-inner {
+	background-color: #FFF;
+}
+
+.footerLink {
+	color: black;
+}
+.footerLink:hover {
+	color: blue;
+	background-color: #FFF;
+}
+
